@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>딥러닝 기반 사이드 채널 공격 탐지 시스템</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Circuit Background -->
+<div class="circuit-bg"></div>
+
+<!-- Navigation -->
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">
+            <span class="logo-text">SCA Research</span>
+        </div>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-menu" id="nav-menu">
+            <li><a href="index.html" class="nav-link active">Home</a></li>
+            <li><a href="pages/team.html" class="nav-link">Team</a></li>
+            <li><a href="pages/contact.html" class="nav-link">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container">
+        <h1 class="hero-title">딥러닝 기반<br>사이드 채널 공격 탐지 시스템</h1>
+        <p class="hero-subtitle">
+            물리적 부수 현상을 분석하여 암호 시스템의 취약점을 탐지하고 방어하는<br>
+            차세대 보안 솔루션 연구
+        </p>
+        <div class="university-badge">
+            <span>연세대학교 컴퓨터공학과 | 2025 Spring Semester</span>
+        </div>
+    </div>
+</section>
+
+<!-- Research Overview -->
+<section class="research-overview">
+    <div class="container">
+        <h2 class="section-title">연구 개요</h2>
+        <div class="overview-grid">
+            <div class="overview-card" data-aos="fade-up">
+                <div class="card-icon">🔒</div>
+                <h3>사이드 채널 공격</h3>
+                <p>전력 소비, 전자기 방사, 처리 시간 등 물리적 부수 현상을 분석하여 비밀 정보를 추출하는 공격 기법</p>
+            </div>
+            <div class="overview-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="card-icon">🧠</div>
+                <h3>딥러닝 기반 탐지</h3>
+                <p>MLP, CNN1D, LSTM 세 가지 딥러닝 모델을 활용하여 사이드 채널 공격을 탐지하고 분류</p>
+            </div>
+            <div class="overview-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="card-icon">🛡️</div>
+                <h3>방어 시스템</h3>
+                <p>실시간 탐지를 통한 방어 전략 수립 및 하드웨어 기반 보안 솔루션 개발</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Attack Types -->
+<section class="attack-types">
+    <div class="container">
+        <h2 class="section-title">사이드 채널 공격 유형</h2>
+        <div class="attack-timeline">
+            <div class="timeline-item" data-aos="fade-right">
+                <div class="timeline-content">
+                    <h3>SPA (Simple Power Analysis)</h3>
+                    <p>단순 전력 분석을 통해 연산 과정에서의 전력 소비 패턴을 시각적으로 분석</p>
+                </div>
+                <div class="timeline-icon">📊</div>
+            </div>
+            <div class="timeline-item" data-aos="fade-left">
+                <div class="timeline-content">
+                    <h3>DPA (Differential Power Analysis)</h3>
+                    <p>통계적 기법을 이용해 전력 소비 차이를 분석하여 예측 결과와 비교</p>
+                </div>
+                <div class="timeline-icon">📈</div>
+            </div>
+            <div class="timeline-item" data-aos="fade-right">
+                <div class="timeline-content">
+                    <h3>TA (Template Analysis)</h3>
+                    <p>사전 확보된 장치로부터 확률 모델을 구성하여 비교 분석</p>
+                </div>
+                <div class="timeline-icon">🎯</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Model Comparison -->
+<section class="model-comparison">
+    <div class="container">
+        <h2 class="section-title">딥러닝 모델 성능 비교</h2>
+        <div class="models-grid">
+            <div class="model-card mlp-card" data-aos="zoom-in">
+                <div class="model-header">
+                    <h3>MLP</h3>
+                    <span class="model-subtitle">Multi-Layer Perceptron</span>
+                </div>
+                <div class="accuracy-display">
+                    <div class="accuracy-circle">
+                        <span class="accuracy-number">99.4%</span>
+                    </div>
+                </div>
+                <div class="model-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">학습 시간</span>
+                        <span class="stat-value">12.3분</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">메모리 사용량</span>
+                        <span class="stat-value">560 MB</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="model-card lstm-card" data-aos="zoom-in" data-aos-delay="200">
+                <div class="model-header">
+                    <h3>LSTM</h3>
+                    <span class="model-subtitle">Long Short-Term Memory</span>
+                </div>
+                <div class="accuracy-display">
+                    <div class="accuracy-circle">
+                        <span class="accuracy-number">93.1%</span>
+                    </div>
+                </div>
+                <div class="model-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">학습 시간</span>
+                        <span class="stat-value">18.5분</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">메모리 사용량</span>
+                        <span class="stat-value">690 MB</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="model-card cnn-card" data-aos="zoom-in" data-aos-delay="400">
+                <div class="model-header">
+                    <h3>CNN1D</h3>
+                    <span class="model-subtitle">1D Convolutional Neural Network</span>
+                </div>
+                <div class="accuracy-display">
+                    <div class="accuracy-circle">
+                        <span class="accuracy-number">89.6%</span>
+                    </div>
+                </div>
+                <div class="model-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">학습 시간</span>
+                        <span class="stat-value">20.8분</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">메모리 사용량</span>
+                        <span class="stat-value">780 MB</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Data Visualization -->
+<section class="data-visualization">
+    <div class="container">
+        <h2 class="section-title">실험 데이터 시각화</h2>
+        <div class="viz-container">
+            <div class="chart-card" data-aos="fade-up">
+                <h3>합성 데이터 분포 (PCA)</h3>
+                <div class="chart-placeholder pca-chart">
+                    <div class="data-points">
+                        <div class="point class-0"></div>
+                        <div class="point class-1"></div>
+                        <div class="point class-0"></div>
+                        <div class="point class-1"></div>
+                        <div class="point class-0"></div>
+                    </div>
+                    <div class="chart-info">
+                        <span>• 샘플: 200,000개</span>
+                        <span>• 특성: 100차원</span>
+                        <span>• 클래스: 2개</span>
+                    </div>
+                </div>
+            </div>
+            <div class="chart-card" data-aos="fade-up" data-aos-delay="200">
+                <h3>학습 곡선</h3>
+                <div class="chart-placeholder learning-curve">
+                    <svg viewBox="0 0 300 200">
+                        <path d="M20,180 Q60,120 100,60 T180,40 T260,35" stroke="#00ffff" stroke-width="2" fill="none" class="mlp-line"/>
+                        <path d="M20,180 Q60,140 100,100 T180,80 T260,75" stroke="#ff6b6b" stroke-width="2" fill="none" class="lstm-line"/>
+                        <path d="M20,180 Q60,150 100,120 T180,100 T260,95" stroke="#4ecdc4" stroke-width="2" fill="none" class="cnn-line"/>
+                    </svg>
+                    <div class="legend">
+                        <span class="legend-item mlp">■ MLP</span>
+                        <span class="legend-item lstm">■ LSTM</span>
+                        <span class="legend-item cnn">■ CNN1D</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Results -->
+<section class="results">
+    <div class="container">
+        <h2 class="section-title">연구 결과</h2>
+        <div class="results-content">
+            <div class="result-highlight" data-aos="fade-up">
+                <h3>🎯 주요 성과</h3>
+                <p>딥러닝 기법을 통해 <strong>90% 이상의 정확도</strong>로 사이드 채널 공격 패턴 분류에 성공했습니다.</p>
+            </div>
+            <div class="conclusions-grid">
+                <div class="conclusion-card" data-aos="fade-up" data-aos-delay="200">
+                    <h4>MLP 모델 우수성</h4>
+                    <p>상대적으로 단순한 구조임에도 불구하고 가장 우수한 분류 성능(99.4%)을 보였습니다.</p>
+                </div>
+                <div class="conclusion-card" data-aos="fade-up" data-aos-delay="400">
+                    <h4>효율성 검증</h4>
+                    <p>학습 시간 및 메모리 사용량 측면에서도 MLP가 가장 효율적인 것으로 확인되었습니다.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>연구진</h4>
+                <p>연세대학교 소프트웨어학부<br>RAISE LAB</p>
+            </div>
+            <div class="footer-section">
+                <h4>과목</h4>
+                <p>암호학 (Cryptography)<br>2025년 1학기</p>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Email: sunjun7559012@yonsei.ac.kr</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Yonsei University. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
